@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Ефимова](https://up.htmlacademy.ru/adaptive/11/user/302633).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Иванец](https://up.htmlacademy.ru/adaptive/11/user/155879).
 
 ---
 
