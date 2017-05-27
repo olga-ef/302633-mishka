@@ -8,7 +8,7 @@
     <header class="page-header">
       <h1 class="page-header__title">Магазин Мишка</h1>
       <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="" width="" height="">
+        <img src="http://placehold.it/150x100" alt="" width="150" height="100">
       </div>
       <nav class="main-nav">
         <span class="main-nav__toggle"><span></span></span>
@@ -53,7 +53,7 @@
               <td class="options-table__value">Тиффани»/серый</td>
             </tr>
             <tr>
-              <td cass="options-table__name">Диаметр:</td>
+              <td class="options-table__name">Диаметр:</td>
               <td class="options-table__value">25 см</td>
             </tr>
             <tr class="options-table__row">
@@ -62,7 +62,7 @@
             </tr>
           </table>
           <div class="product-item__img">
-            <img src="http://placehold.it/150x100" alt="Вязаные корзинки" width="" height="">
+            <img src="http://placehold.it/150x100" alt="Вязаные корзинки" width="150" height="100">
           </div>
           <span class="product-item__price">Цена: 990 руб.</span>
           <button class="btn product-item__btn" type="button">Заказать</button>
@@ -81,16 +81,12 @@
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__slider-wrapper slider">
-          <div class="slider__wrapper">
-            <div class="reviews__list sliser__inner">
-              <blockquote class="reviews__item slider__item">
-                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                <cite class="reviews__author-name">Анастасия Красильникова</cite>
-                <a class="reviews__login">@misssssiskras</a>
-              </blockquote>
-            </div>
-          </div>
+        <div class="reviews__wrapper">
+          <blockquote class="reviews__item slider__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <cite class="reviews__author-name">Анастасия Красильникова</cite>
+            <a class="reviews__login">@misssssiskras</a>
+          </blockquote>
         </div>
         <button class="reviews__btn reviews__btn--prev">Предыдущий отзыв</button>
         <button class="reviews__btn reviews__btn--next">Следующий отзыв</button>
@@ -131,17 +127,17 @@
         <h3 class="order-modal__title">Добавить в корзину</h3>
         <p class="order-modal__add-text">Выберите размер:</p>
         <div class="order-modal__sizes-wrapper">
-          <label class"order-modal__size-item">
+          <label class="order-modal__size-item">
             <span>S</span>
-            <input type="radio" name="size" id="size" value="S" checked>
+            <input type="radio" name="size"  value="S" checked>
           </label>
-          <label class"order-modal__size-item">
+          <label class="order-modal__size-item">
             <span>M</span>
-            <input type="radio" name="size" id="size" value="M">
+            <input type="radio" name="size" value="M">
           </label>
-          <label class"order-modal__size-item">
+          <label class="order-modal__size-item">
             <span>L</span>
-            <input type="radio" name="size" id="size" value="L">
+            <input type="radio" name="size" value="L">
           </label>
         </div>
         <button class="btn btn--blue order-modal__btn" type="submit">Заказать</button>
