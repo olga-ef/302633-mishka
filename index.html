@@ -126,6 +126,27 @@
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано <span class="page-footer__academy-logo">HTML academy</span></a>
       </div>
     </footer>
+    <div class="order-modal">
+      <form class="order-modal__order-form" method="post" action="https://echo.htmlacademy.ru/">
+        <h3 class="order-modal__title">Добавить в корзину</h3>
+        <p class="order-modal__add-text">Выберите размер:</p>
+        <div class="order-modal__sizes-wrapper">
+          <label class"order-modal__size-item">
+            <span>S</span>
+            <input type="radio" name="size" id="size" value="S" checked>
+          </label>
+          <label class"order-modal__size-item">
+            <span>M</span>
+            <input type="radio" name="size" id="size" value="M">
+          </label>
+          <label class"order-modal__size-item">
+            <span>L</span>
+            <input type="radio" name="size" id="size" value="L">
+          </label>
+        </div>
+        <button class="btn btn--blue order-modal__btn" type="submit">Заказать</button>
+      </form>
+    </div>
 
 
 
