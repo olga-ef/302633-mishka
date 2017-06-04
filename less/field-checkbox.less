@@ -1,10 +1,60 @@
 .field-checkbox {
+  display: flex;
+  flex-direction: column;
   font-size: @font-size-form;
   line-height: 18px;
   font-weight: bold;
+
+  outline: 1px solid green;
+  min-height: 410px;
 }
 
 .field-checkbox__title {
   color: @color-blue;
   text-transform: uppercase;
+}
+
+.field-checkbox__items {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+
+  .field-checkbox {
+    flex-direction: row;
+    min-height: 305px;
+    padding: 50px 0;
+  }
+
+  .field-checkbox__title {
+    width: 175px;
+  }
+
+  .field-checkbox__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    outline: 1px solid red;
+    width: 500px;
+    height: 205px;
+  }
+
+  .field-checkbox__item {
+    min-height: 55px;
+    width: 225px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+    .field-checkbox {
+      min-height: 230px;
+    }
+
+    .field-checkbox__items {
+      width: 875px;
+  }
+
+
 }

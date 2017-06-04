@@ -1,10 +1,59 @@
 .field-text {
+  display: flex;
+  flex-direction: column;
   font-size: @font-size-form;
   line-height: 18px;
   font-weight: bold;
+
+  outline: 1px solid green;
+  min-height: 330px;
+
+  &--tel, &--mail {
+    min-height: 105px;
+  }
+
+  &--textarea {
+    min-height: 185px;
+  }
 }
 
 .field-text__title {
   color: @color-blue;
   text-transform: uppercase;
+}
+
+.field-text__items {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form__footer  {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+
+  .field-text {
+    flex-direction: row;
+  }
+
+  .field-text__title  {
+    width: 175px;
+  }
+
+  .form__footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+.field-text {
+  padding-right: 175px;
+}
+
 }

@@ -106,20 +106,22 @@
               </label>
             </div>
           </div>
-          <div class="field-text">
+          <div class="field-text field-text--tel">
             <label class="field-text__title" for="tel">Тел</label>
             <input class="field-text__input field-text__input--tel" type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*" required>
           </div>
-          <div class="field-text">
+          <div class="field-text field-text--mail">
             <label class="field-text__title" for="mail">E-mail</label>
             <input class="field-text__input field-text__input--mail" type="email" name="mail" id="mail" placeholder="Ваш e-mail*" required>
           </div>
-          <div class="field-text">
+          <div class="field-text field-text--textarea">
             <label class="field-text__title" for="addition">Доп</label>
             <textarea class="feield-text__textarea" name="addition" id="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
-          <p class="form__note">*Поля обязательны для заполнения</p>
-          <button class="btn form__btn" type="submit">Отправить заказ</button>
+          <div class="form__footer">
+            <p class="form__note">*Поля обязательны для заполнения</p>
+            <button class="btn form__btn" type="submit">Отправить заказ</button>
+          </div>
         </form>
       </main>
       <footer class="page-footer">
