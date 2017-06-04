@@ -1,9 +1,28 @@
 .page-title {
   margin: 0;
-  padding: 75px 0 65px;
+  padding: 75px 0 70px;
   font-size: @font-size-h1;
   line-height: 30px;
   font-weight: bold;
   background-color: #f1f1f1;
   text-align: center;
+
+  outline: 2px solid blue;
+}
+
+@media (min-width: @tablet-width) {
+
+  .page-title {
+    margin-top: -60px;
+    padding: 105px 0 70px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .page-title {
+    padding: 103px 0 90px;
+    line-height: 57px;
+  }
 }
