@@ -1,5 +1,9 @@
 .reviews {
+  position: relative;
   padding: 30px 30px 44px;
+
+  outline: 2px solid red;
+  height: 655px;
 }
 
 .reviews__title {
@@ -8,6 +12,8 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+
+  outline: 1px solid blue;
 }
 
 .reviews__item {
@@ -39,4 +45,48 @@
 
 .reviews__btn-wapper {
   margin-bottom: 38px;
+  outline: 1px solid blue;
+}
+
+@media(min-width: @tablet-width) {
+
+  .reviews {
+    padding: 85px 50px;
+
+    height: 540px;
+  }
+
+  .reviews__title {
+    height: 50px;
+    margin-bottom: 60px;
+  }
+
+  .reviews__btn-wrapper {
+    position: absolute;
+    right: 50px;
+    bottom: 130px;
+  }
+
+  .reviews__write {
+    position: absolute;
+    right: 50px;
+    top: 80px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+
+  .reviews {
+    padding-top: 79px;
+    padding-left: 225px;
+    padding-bottom: 195px;
+  }
+
+  .reviews__title {
+    height: 57px;
+  }
+
+  .reviews__btn-wrapper {
+    bottom: 200px;
+  }
 }
