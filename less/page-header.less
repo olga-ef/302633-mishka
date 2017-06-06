@@ -1,19 +1,18 @@
 .page-header {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 22px 30px;
   background-color: transparent;
   outline: 2px solid red;
 }
 
 .page-header__logo {
-  margin-left: 85px;
-
-
+  position:  absolute;
+  left: 50%;
+  transform: translateX(-50%);
   outline: 1px solid blue;
   width: 86px;
-  height: 35px;
   overflow: hidden;
 }
 
@@ -21,11 +20,11 @@
 
   .page-header {
     padding: 22px 50px;
-    height: 150px;
   }
 
   .page-header__logo {
-    margin-left: 0;
+    left: 50px;
+    transform: none;
   }
 }
 
@@ -36,9 +35,8 @@
   }
 
   .page-header__logo {
-    margin-left: 430px;
     width: 149px;
-    height: 72px;
-
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

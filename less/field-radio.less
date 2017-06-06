@@ -1,12 +1,8 @@
 .field-radio {
-  display: flex;
-  flex-direction: column;
   font-size: @font-size-form;
   line-height: 18px;
   font-weight: bold;
-
   outline: 1px solid green;
-  min-height: 165px;
 }
 
 .field-radio__title {
@@ -22,7 +18,7 @@
   @media (min-width: @tablet-width) {
 
     .field-radio {
-      flex-direction: row;
+      display: flex;
     }
 
     .field-radio__title {

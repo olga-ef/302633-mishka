@@ -1,8 +1,5 @@
 .features {
-  display: flex;
-  flex-direction: column;
   padding: 30px 30px;
-
   outline: 2px solid blue;
 }
 
@@ -12,29 +9,22 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-
   outline: 1px solid green;
 }
 
 .features__list {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: @font-size-h2;
   line-height: 20px;
   font-weight: bold;
-
   outline: 1px solid green;
-  height: 710px;
-
 }
 
 .features__item {
   margin-bottom: 20px;
   padding-top: 55px;
-
   outline: 1px solid red;
 }
 
@@ -46,17 +36,16 @@
 
   .features__title {
     margin-bottom: 40px;
-    min-height: 50px;
   }
 
   .features__list {
-    height: 430px;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
   .features__item {
     width: 50%;
-    height: 110px;
   }
 }
 
@@ -65,5 +54,4 @@
   .features {
     padding: 68px 225px;
   }
-
 }

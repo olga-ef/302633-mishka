@@ -1,9 +1,6 @@
 .reviews {
-  position: relative;
   padding: 30px 30px 44px;
-
   outline: 2px solid red;
-  height: 655px;
 }
 
 .reviews__title {
@@ -12,7 +9,6 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-
   outline: 1px solid blue;
 }
 
@@ -21,6 +17,7 @@
   font-size: @font-size-text-secondary;
   line-height: 30px;
   color: @color-gray;
+  outline:1px solid red;
 }
 
 .reviews__text {
@@ -51,26 +48,27 @@
 @media(min-width: @tablet-width) {
 
   .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     padding: 85px 50px;
-
-    height: 540px;
   }
 
   .reviews__title {
-    height: 50px;
     margin-bottom: 60px;
+    margin-right: auto;
+  }
+
+  .reviews__slider-wrapper {
+    order: 2;
   }
 
   .reviews__btn-wrapper {
-    position: absolute;
-    right: 50px;
-    bottom: 130px;
+    order: 3;
   }
 
   .reviews__write {
-    position: absolute;
-    right: 50px;
-    top: 80px;
+    order: 1;
   }
 }
 
@@ -83,7 +81,6 @@
   }
 
   .reviews__title {
-    height: 57px;
   }
 
   .reviews__btn-wrapper {
