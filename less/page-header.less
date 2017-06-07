@@ -1,4 +1,42 @@
 .page-header {
-  padding: 20px 30px;
-  background-color: @color-white;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 22px 30px;
+  background-color: transparent;
+  outline: 2px solid red;
+}
+
+.page-header__logo {
+  position:  absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 1px solid blue;
+  width: 86px;
+  overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+
+  .page-header {
+    padding: 22px 50px;
+  }
+
+  .page-header__logo {
+    left: 50px;
+    transform: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .page-header {
+    padding-top: 9px;
+  }
+
+  .page-header__logo {
+    width: 149px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

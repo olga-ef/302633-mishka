@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка - вязание на заказ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -22,10 +23,21 @@
                 <a class="main-nav__link main-nav__link--active">Вязание на заказ</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__linl--search" href="#">Поиск по сайту</a>
+                <a class="main-nav__link main-nav__link--hidden" href="#">Новые поступления</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--busket " href="#">Корзина: пока пуста</a>
+                <a class="main-nav__link main-nav__link--hidden" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <ul class="main-nav__user-items">
+              <li class="main-nav__user-item">
+                <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
+              </li>
+              <li class="main-nav__user-item">
+                <a class="main-nav__link main-nav__link--busket" href="#">Корзина: пока пуста</a>
+              </li>
+              <li class="main-nav__user-item">
+                <span class="main-nav__delivery" href="#">Бесплатная доставка по России</span>
               </li>
             </ul>
           </div>
@@ -94,23 +106,28 @@
               </label>
             </div>
           </div>
-          <div class="field-text">
+          <div class="field-text field-text--tel">
             <label class="field-text__title" for="tel">Тел</label>
             <input class="field-text__input field-text__input--tel" type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*" required>
           </div>
-          <div class="field-text">
+          <div class="field-text field-text--mail">
             <label class="field-text__title" for="mail">E-mail</label>
             <input class="field-text__input field-text__input--mail" type="email" name="mail" id="mail" placeholder="Ваш e-mail*" required>
           </div>
-          <div class="field-text">
+          <div class="field-text field-text--textarea">
             <label class="field-text__title" for="addition">Доп</label>
             <textarea class="feield-text__textarea" name="addition" id="addition" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
-          <p class="form__note">*Поля обязательны для заполнения</p>
-          <button class="btn form__btn" type="submit">Отправить заказ</button>
+          <div class="form__footer">
+            <p class="form__note">*Поля обязательны для заполнения</p>
+            <button class="btn form__btn" type="submit">Отправить заказ</button>
+          </div>
         </form>
       </main>
       <footer class="page-footer">
+        <div class="page-footer__logo">
+          <img src="http://placehold.it/150x100" alt="" width="150" height="100">
+        </div>
         <div class="page-footer__social">
           <div class="social-links">
             <a class="social-link social-link--in" href="#">Мы в инстаграме</a>

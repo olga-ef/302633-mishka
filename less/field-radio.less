@@ -2,9 +2,26 @@
   font-size: @font-size-form;
   line-height: 18px;
   font-weight: bold;
+  outline: 1px solid green;
 }
 
 .field-radio__title {
   color: @color-blue;
   text-transform: uppercase;
 }
+
+.field-radio__items {
+  display: flex;
+  flex-direction: column;
+}
+
+  @media (min-width: @tablet-width) {
+
+    .field-radio {
+      display: flex;
+    }
+
+    .field-radio__title {
+      width: 175px;
+    }
+  }

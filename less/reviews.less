@@ -1,5 +1,6 @@
 .reviews {
   padding: 30px 30px 44px;
+  outline: 2px solid red;
 }
 
 .reviews__title {
@@ -8,13 +9,15 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+  outline: 1px solid blue;
 }
 
 .reviews__item {
   margin: 0;
   font-size: @font-size-text-secondary;
   line-height: 30px;
-  color: @color-gay;
+  color: @color-gray;
+  outline:1px solid red;
 }
 
 .reviews__text {
@@ -39,4 +42,48 @@
 
 .reviews__btn-wapper {
   margin-bottom: 38px;
+  outline: 1px solid blue;
+}
+
+@media(min-width: @tablet-width) {
+
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 85px 50px;
+  }
+
+  .reviews__title {
+    margin-bottom: 60px;
+    margin-right: auto;
+  }
+
+  .reviews__slider-wrapper {
+    order: 2;
+  }
+
+  .reviews__btn-wrapper {
+    order: 3;
+  }
+
+  .reviews__write {
+    order: 1;
+  }
+}
+
+@media(min-width: @desktop-width) {
+
+  .reviews {
+    padding-top: 79px;
+    padding-left: 225px;
+    padding-bottom: 195px;
+  }
+
+  .reviews__title {
+  }
+
+  .reviews__btn-wrapper {
+    bottom: 200px;
+  }
 }

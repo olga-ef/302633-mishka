@@ -2,9 +2,44 @@
   font-size: @font-size-form;
   line-height: 18px;
   font-weight: bold;
+  outline: 1px solid green;
+
+  &--tel, &--mail {
+  }
+
+  &--textarea {
+  }
 }
 
 .field-text__title {
   color: @color-blue;
   text-transform: uppercase;
+}
+
+.field-text__items {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+
+  .field-text {
+    display: flex;
+  }
+
+  .field-text__title  {
+    width: 175px;
+  }
+
+  .form__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .field-text {
+    padding-right: 175px;
+  }
 }

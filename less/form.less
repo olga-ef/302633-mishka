@@ -8,4 +8,25 @@
   font-size: @font-size-text-primary;
   line-height: 24px;
   color: @color-gray;
+  outline: 1px solid green;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    padding: 68px 50px 50px;
+  }
+
+  .form__text {
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .form {
+    padding-top: 130px;
+  }
+
+  .form__text {
+    padding: 0 175px;
+  }
 }
