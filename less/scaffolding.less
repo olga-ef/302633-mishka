@@ -5,6 +5,22 @@ body {
   color: @color-black;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  oveflow: hidden;
 }
