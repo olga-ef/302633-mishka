@@ -1,5 +1,61 @@
 .table {
+  border-collapse: collapse;
   font-size: @font-size-text-secondary;
   line-height: 24px;
   color: @color-gray;
+
+  &--contacts {
+    line-height: 30px;
+  }
+}
+
+.table__row {
+  border-bottom: 1px solid #ececec;
+}
+
+.table__col {
+  padding: 5px 0 10px;
+
+  &--first {
+    width: 97px;
+  }
+
+  &--adress {
+    padding-top: 20px;
+  }
+}
+
+.table--contacts .table__col--first {
+  width: 75px;
+  vertical-align: top;
+}
+
+.table--contacts .table__row {
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .table__col {
+    padding-right: 0;
+
+    &--adress {
+      padding-top: 5px;
+    }
+
+    &--first {
+      width: 95px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table--contacts .table__col--first {
+    width: 75px;
+    vertical-align: top;
+  }
+
+  .table__col--adress {
+    padding-top: 20px;
+  }
 }

@@ -1,7 +1,7 @@
 .btn {
   display: block;
   width: 260px;
-  padding: 16px 0;
+  padding: 14px 0;
   font-family: @font-family-base;
   font-size: @font-size-btn;
   line-height: 20px;
@@ -12,4 +12,21 @@
   text-decoration: none;
   border: 2px solid #444444;
   background-color: #ffffff;
+
+  &:hover {
+    color: @color-btn--hover;
+    background-color: @bg-btn--gray;
+  }
+
+  &:active {
+    color: @color-btn--active;
+    background-color: @bg-btn--gray;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .btn {
+    width: 292px;
+  }
 }

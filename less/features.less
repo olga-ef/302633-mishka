@@ -1,15 +1,13 @@
 .features {
-  padding: 30px 30px;
-  outline: 2px solid blue;
+  padding: 25px 30px;
 }
 
 .features__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-  outline: 1px solid green;
 }
 
 .features__list {
@@ -19,39 +17,114 @@
   font-size: @font-size-h2;
   line-height: 20px;
   font-weight: bold;
-  outline: 1px solid green;
 }
 
 .features__item {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 28px;
   padding-top: 55px;
-  outline: 1px solid red;
+
+  &::before {
+    content: "";
+    width: 55px;
+    height: 38px;
+    position: absolute;
+    top: 0;
+  }
+
+  &--eco::before {
+    background-image: url("../img/icon-feature-1.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 0;
+  }
+
+  &--price::before {
+    background-image: url("../img/icon-feature-3.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--like::before {
+    background-image: url("../img/icon-feature-5.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 5px;
+  }
+
+  &--hand-made::before {
+    background-image: url("../img/icon-feature-2.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 3px;
+  }
+
+  &--native::before {
+    background-image: url("../img/icon-feature-4.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+  }
+
+  &--pack::before {
+    background-image: url("../img/icon-feature-6.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 0px;
+  }
 }
 
 @media(min-width: @tablet-width) {
 
   .features {
-    padding: 60px 50px;
+    padding: 48px 50px 30px;
   }
 
   .features__title {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
+    font-size: @font-size__h--tablet;
+    line-height: 50px;
   }
 
   .features__list {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
   }
 
   .features__item {
     width: 50%;
+    margin-bottom: 55px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--eco {
+      order: 1;
+    }
+
+    &--hand-made {
+      order: 2;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--like {
+      order: 5;
+    }
+
+    &--native {
+      order: 4;
+    }
+
+    &--pack {
+      order: 6;
+    }
   }
 }
 
 @media(min-width: @desktop-width) {
 
   .features {
-    padding: 68px 225px;
+    padding: 60px 225px 35px;
+  }
+
+  .features__title {
+    font-size: @font-size__h--desktop;
+    line-height: 57px;
   }
 }
