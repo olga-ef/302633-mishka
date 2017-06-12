@@ -77,7 +77,7 @@
               </tr>
             </table>
             <div class="week-produkt__img">
-              <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+              <img class="week-produkt__img-item" src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
             </div>
             <span class="week-produkt__price">Цена: 990 руб.</span>
             <a class="btn week-podukt__btn" href="#">Заказать</a>
@@ -149,22 +149,22 @@
         </div>
       </footer>
       <div class="order-modal">
-        <form class="order-modal__form form" method="post" action="https://echo.htmlacademy.ru/">
-          <h3 class="form__title">Добавить в корзину</h3>
-          <p class="form__add-text">Выберите размер:</p>
+        <form class="order-modal__form form form--modal" method="post" action="https://echo.htmlacademy.ru/">
+          <h3 class="form__title form__title--modal">Добавить в&nbsp;корзину</h3>
+          <p class="form__text form__text--modal">Выберите размер:</p>
           <div class="field-radio field-radio--size">
-            <div class="field-radio__items">
-              <label class="field-radio__item">
-                <input class="field-radio__input" type="radio" name="size"  value="S" checked>
-                <span class="field-radio__text">S</span>
+            <div class="field-radio__items field-radio__items--modal">
+              <label class="field-radio__item field-radio__item-modal">
+                <input class="field-radio__input visually-hidden" type="radio" name="size"  value="S" checked>
+                <span class="field-radio__text field-radio__text--modal">S</span>
               </label>
-              <label class="field-radio__item">
-                <input class="field-radio__input" type="radio" name="size" value="M">
-                <span class="field-radio__text">M</span>
+              <label class="field-radio__item field-radio__item--modal">
+                <input class="field-radio__input visually-hidden" type="radio" name="size" value="M">
+                <span class="field-radio__text field-radio__text--modal">M</span>
               </label>
-              <label class="field-radio__item">
-                <input class="field-radio__input" type="radio" name="size" value="L">
-                <span class="field-radio__text">L</span>
+              <label class="field-radio__item field-radio__item--modal">
+                <input class="field-radio__input visually-hidden" type="radio" name="size" value="L">
+                <span class="field-radio__text field-radio__text--modal">L</span>
               </label>
             </div>
           </div>
