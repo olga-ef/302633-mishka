@@ -1,7 +1,7 @@
 .field-radio {
   margin-bottom: 30px;
   padding: 0 30px;
-  font-size: @font-size-form;
+  font-size: @text__font-size--big;
   line-height: 18px;
   font-weight: bold;
 
@@ -13,7 +13,7 @@
 .field-radio__title {
   position: relative;
   margin-bottom: 25px;
-  color: @color-blue;
+  color: #63d1bb;
   text-transform: uppercase;
 
   &::after {
@@ -30,22 +30,22 @@
 .field-radio__items {
   display: flex;
   flex-direction: column;
+}
 
-  &--modal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    outline: 1px solid red;
-  }
+.field-radio--size .field-radio__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: 1px solid red;
 }
 
 .field-radio__item {
   width: 220px;
   margin-bottom: 15px;
+}
 
-  &--modal {
+.field-radio--size .field-radio__item {
     margin-bottom: 0;
-  }
 }
 
 .field-radio__text {
@@ -65,24 +65,24 @@
     border: 2px solid #444444;
     border-radius: 50%;
   }
+}
 
-  &--modal {
-    display: block;
-    width: 82px;
-    height: 52px;
-    margin: 0;
-    padding: 15px 0;
-    font-size: @font-size__text--big;
-    line-height: 17px;
-    color: #444444;
-    text-transform: uppercase;
-    border: 2px solid #444444;
-    text-align: center;
-  }
+.field-radio--size .field-radio__text {
+  display: block;
+  width: 82px;
+  height: 52px;
+  margin: 0;
+  padding: 15px 0;
+  font-size: @text__font-size--big;
+  line-height: 17px;
+  color: #444444;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  text-align: center;
+}
 
-  &--modal::before {
-    display: none;
-  }
+.field-radio--size .field-radio__text::before {
+  display: none;
 }
 
 .field-radio__input:checked + .field-radio__text::after {
@@ -113,7 +113,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .field-radio {
     display: flex;
     padding: 25px 50px 0;
@@ -155,12 +154,10 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .field-radio {
     padding-top: 22px;
     margin-bottom: 28px;
   }
-
 
   .field-radio__title {
     width: 175px;

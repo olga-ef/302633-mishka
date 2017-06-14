@@ -10,7 +10,7 @@
   margin: 0;
   margin-bottom: 24px;
   padding-left: 90px;
-  font-size: @font-size-h2;
+  font-size: @title__font-size--h2;
   line-height: 24px;
   font-weight: bold;
 
@@ -39,8 +39,6 @@
   width: 102px;
   height: 78px;
   background-color: transparent;
-  background-image: url(../img/icon-play.svg);
-  background-size: cover;
   border: none;
   font-size: 0;
   cursor: pointer;
@@ -64,9 +62,9 @@
   margin: 0;
   margin-bottom: 50px;
   padding-left: 30px;
-  font-size: @font-size-text-primary;
+  font-size: @text__font-size--small;
   line-height: 24px;
-  color: @color-gray;
+  color: @text__color--main;
 }
 
  .video__order-btn {
@@ -75,7 +73,6 @@
  }
 
 @media (min-width: @tablet-width) {
-
   .video {
     display: flex;
     flex-direction: column;
@@ -111,7 +108,7 @@
   .video__descr {
     margin-bottom: 38px;
     padding-left: 40px;
-    font-size: @font-size-text-secondary;
+    font-size: @text__font-size--medium;
     line-height: 30px;
   }
 

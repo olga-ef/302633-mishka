@@ -39,12 +39,12 @@
 
 .contacts__mail-link {
   display: inline-block;
-  color: @color-gray;
+  color: @text__color--main;
   border-bottom: 1px solid #62d1ba;
   text-decoration: none;
 
   &:hover {
-    color: @color-blue;
+    color: #63d1bb;
   }
 
   &:active {
@@ -53,7 +53,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .contacts {
     position: relative;
     padding-top: 60px;
@@ -77,14 +76,14 @@
 
   .contacts__title {
     margin-bottom: 45px;
-    font-size: @font-size__h--tablet;
+    font-size: @title__font-size--m;
     line-height: 50px;
   }
 
   .contacts__table {
     margin-bottom: 45px;
     display: block;
-    font-size: @font-size__text--big;
+    font-size: @text__font-size--big;
     line-height: 30px;
   }
 
@@ -106,13 +105,12 @@
 
   .contacts__write {
     width: 230px;
-    font-size: @font-size__text--big;
+    font-size: @text__font-size--big;
     line-height: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-
   .contacts {
     display: flex;
     flex-direction: column;
@@ -137,7 +135,7 @@
 
   .contacts__title {
     width: 300px;
-    font-size: @font-size__h--desktop;
+    font-size: @title__font-size--l;
     line-height: 57px;
   }
 
