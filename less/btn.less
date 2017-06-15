@@ -1,15 +1,37 @@
 .btn {
   display: block;
   width: 260px;
-  padding: 16px 0;
+  padding: 14px 0;
   font-family: @font-family-base;
-  font-size: @font-size-btn;
+  font-size: @btn__font-size;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: @color-gray;
+  color: @text__color--main;
   font-weight: bold;
   text-decoration: none;
   border: 2px solid #444444;
   background-color: #ffffff;
+
+  &:hover {
+    color: @btn__color--hover;
+    background-color: @btn__bg--hover;
+  }
+
+  &:active {
+    color: @btn__color--active;
+    background-color: btn__bg--hover;
+  }
+
+  &--secondary {
+    background-color: @btn__bg--secondary;
+    color: #ffffff;
+    border: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    width: 292px;
+  }
 }

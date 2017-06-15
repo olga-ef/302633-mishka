@@ -1,7 +1,6 @@
 .page-footer {
   padding: 0 30px;
-  background-color: #eae6dd;
-  outline: 2px solid red;
+  background-color: bg--main;
 }
 
 .page-footer__logo {
@@ -9,25 +8,42 @@
 }
 
 .page-footer__social {
-  outline: 1px solid green;
+  width: 147px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
 }
 
-.page-footer__copyight {
-  outline: 1px solid green;
+.page-footer__copyright {
+  padding: 20px 38px 22px;
 }
 
 .page-footer__copyright-link {
   font-size: 19px;
   line-height: 19px;
+  display: inline-block;
   color: @color-black;
   text-decoration: none;
   font-weight: bold;
+  vertical-align: middle;
+}
+
+.page-footer__academy-logo {
+  font-size: 0;
+  display: inline-block;
+  width: 27px;
+  height: 34px;
+  margin-left: 22px;
+  background-image: url(../img/logo-htmlacademy.svg);
+  background-repeat: no-repeat;
+  vertical-align: middle;
 }
 
 @media (min-width: @tablet-width) {
-
   .page-footer {
-    padding: 51px 50px 0;
+    padding: 50px;
     display: flex;
   }
 
@@ -35,5 +51,28 @@
     display: block;
     width: 102px;
     overflow: hidden;
+    margin-right: 160px;
+  }
+
+  .page-footer__social {
+    padding: 10px 0;
+    margin-right: 80px;
+    border: none;
+  }
+
+  .page-footer__copyright {
+    width: 185px;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__logo {
+    margin-right: 160px;
+  }
+
+  .page-footer__copyright {
+    margin-left: auto;
+    padding: 5px 0;
   }
 }
