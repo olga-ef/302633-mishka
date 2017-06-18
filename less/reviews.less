@@ -1,5 +1,9 @@
 .reviews {
   padding: 0 30px 50px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-size: 320px 7px;
+  background-position: bottom;
 }
 
 .reviews__title {
@@ -84,21 +88,12 @@
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 78px 50px 105px;
-    background-image: url("../img/review@1x.jpg");
+    background-image:
+      url("../img/bg-zigzag-line.svg"),
+      url("../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 350px auto;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 17px;
-      background-image: url("../img/bg-zigzag-line.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+    background-size: 772px 17px, 350px auto;
+    background-position: bottom, top left;
   }
 
   .reviews__title {
@@ -156,14 +151,11 @@
 
 @media(min-width: @desktop-width) {
   .reviews {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-left: 225px;
     padding-bottom: 185px;
-    background-position: 50px 0;
-
-    &::after {
-      height: 23px;
-    }
+    background-position: bottom, 50px 0;
+    background-size: 1050px 23px, 350px auto;
   }
 
   .reviews__title {
