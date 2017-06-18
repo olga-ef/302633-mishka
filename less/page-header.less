@@ -4,6 +4,7 @@
   justify-content: flex-end;
   padding: 28px 30px;
   background-color: transparent;
+  z-index: 1;
 }
 
 .page-header__logo {
@@ -13,6 +14,13 @@
   left: 50%;
   top: 22px;
   transform: translateX(-50%);
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -21,6 +29,8 @@
   }
 
   .page-header__logo {
+    width: 113px;
+    height: 46px;
     left: 50px;
     transform: none;
   }
@@ -29,6 +39,7 @@
 @media (min-width: @desktop-width) {
   .page-header__logo {
     width: 149px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
   }
