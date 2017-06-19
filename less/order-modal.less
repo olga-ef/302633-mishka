@@ -6,11 +6,20 @@
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 10;
-  display: none;
+  display: block;
 }
 
 .order-modal__form {
+  position: absolute;
   width: 320px;
-  margin: 50% auto;
-  transform: translateY(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: @tablet-width) {
+
+  .order-modal__form {
+    width: 566px;
+  }
 }

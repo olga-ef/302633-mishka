@@ -49,6 +49,10 @@
 @media (min-width: @tablet-width) {
   .form {
     padding: 70px 0 50px;
+
+    &--modal {
+      padding: 37px 100px 46px;
+    }
   }
 
   .form__text {
@@ -56,6 +60,10 @@
     padding: 0 50px;
     font-size: @text__font-size--big;
     line-height: 30px;
+
+    &--modal {
+      margin-bottom: 24px;
+    }
   }
 
   .form__footer {
@@ -77,14 +85,28 @@
   }
 }
 
+.form__title--modal {
+  font-size: 30px;
+  line-height: 57px;
+  margin-bottom: 17px;
+}
+
 @media (min-width: @desktop-width) {
   .form {
     padding-top: 125px;
     padding-bottom: 30px;
+
+    &--modal {
+      padding: 37px 100px 46px;
+    }
   }
 
   .form__text {
     padding: 0 225px;
+
+    &--modal {
+      padding: 0;
+    }
   }
 
   .form__footer {
