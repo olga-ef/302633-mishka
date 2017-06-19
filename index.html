@@ -112,7 +112,7 @@
                 </picture>
               </div>
               <span class="week-produkt__price">Цена: 990 руб.</span>
-              <a class="btn week-podukt__btn" href="#">Заказать</a>
+              <a class="btn week-produkt__btn" href="#">Заказать</a>
             </div>
           </section>
         </div>
@@ -243,28 +243,30 @@
           </div>
         </div>
       </footer>
-      <div class="order-modal">
-      <form class="order-modal__form form form--modal" method="post" action="https://echo.htmlacademy.ru/">
-        <h3 class="form__title form__title--modal">Добавить в&nbsp;корзину</h3>
-        <p class="form__text form__text--modal">Выберите размер:</p>
-        <div class="field-radio field-radio--size">
-          <div class="field-radio__items">
-            <label class="field-radio__item field-radio__item">
-              <input class="field-radio__input visually-hidden" type="radio" name="size"  value="S" checked>
-              <span class="field-radio__text">S</span>
-            </label>
-            <label class="field-radio__item">
-              <input class="field-radio__input visually-hidden" type="radio" name="size" value="M">
-              <span class="field-radio__text ">M</span>
-            </label>
-            <label class="field-radio__item">
-              <input class="field-radio__input visually-hidden" type="radio" name="size" value="L">
-              <span class="field-radio__text">L</span>
-            </label>
+      <div class="order-modal order-modal--close">
+        <form class="order-modal__form form form--modal" method="post" action="https://echo.htmlacademy.ru/">
+          <h3 class="form__title form__title--modal">Добавить в&nbsp;корзину</h3>
+          <p class="form__text form__text--modal">Выберите размер:</p>
+          <div class="field-radio field-radio--size">
+            <div class="field-radio__items">
+              <label class="field-radio__item field-radio__item">
+                <input class="field-radio__input visually-hidden" type="radio" name="size"  value="S" checked>
+                <span class="field-radio__text">S</span>
+              </label>
+              <label class="field-radio__item">
+                <input class="field-radio__input visually-hidden" type="radio" name="size" value="M">
+                <span class="field-radio__text ">M</span>
+              </label>
+              <label class="field-radio__item">
+                <input class="field-radio__input visually-hidden" type="radio" name="size" value="L">
+                <span class="field-radio__text">L</span>
+              </label>
+            </div>
           </div>
-        </div>
-        <button class="btn btn--secondary order-modal__btn" type="submit">Добавить</button>
+          <button class="btn btn--secondary order-modal__btn" type="submit">Добавить</button>
       </form>
     </div>
+    <script src="js/week-produkt-script.js"></script>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

@@ -16,7 +16,7 @@
             <img src="img/logo-mobile.svg" alt="Магазин Мишка" width="149" height="72">
           </picture>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle"></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -208,28 +208,30 @@
           </div>
         </div>
       </footer>
-      <div class="order-modal">
-        <form class="order-modal__form form" method="post" action="https://echo.htmlacademy.ru/">
-          <h3 class="form__title">Добавить в корзину</h3>
-          <p class="form__add-text">Выберите размер:</p>
+      <div class="order-modal order-modal--close">
+        <form class="order-modal__form form form--modal" method="post" action="https://echo.htmlacademy.ru/">
+          <h3 class="form__title form__title--modal">Добавить в&nbsp;корзину</h3>
+          <p class="form__text form__text--modal">Выберите размер:</p>
           <div class="field-radio field-radio--size">
             <div class="field-radio__items">
-              <label class="field-radio__item">
-                <input class="field-radio__input" type="radio" name="size"  value="S" checked>
+              <label class="field-radio__item field-radio__item">
+                <input class="field-radio__input visually-hidden" type="radio" name="size"  value="S" checked>
                 <span class="field-radio__text">S</span>
               </label>
               <label class="field-radio__item">
-                <input class="field-radio__input" type="radio" name="size" value="M">
-                <span class="field-radio__text">M</span>
+                <input class="field-radio__input visually-hidden" type="radio" name="size" value="M">
+                <span class="field-radio__text ">M</span>
               </label>
               <label class="field-radio__item">
-                <input class="field-radio__input" type="radio" name="size" value="L">
+                <input class="field-radio__input visually-hidden" type="radio" name="size" value="L">
                 <span class="field-radio__text">L</span>
               </label>
             </div>
           </div>
-          <button class="btn btn--blue order-modal__btn" type="submit">Заказать</button>
-        </form>
-      </div>
+          <button class="btn btn--secondary order-modal__btn" type="submit">Добавить</button>
+      </form>
+    </div>
+    <script src="js/catalog-item-script.js"></script>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>
