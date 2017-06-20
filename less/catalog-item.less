@@ -68,11 +68,29 @@
 }
 
 .catalog-item__icon {
+  position: relative;
   width: 19px;
   height: 24px;
   font-size: 0;
-  background-image: url(../img/icon-cart.svg);
   background-repeat: no-repeat;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog-item__icon-item {
+  position: absolute;
+
+  &:hover,
+  &:active {
+    fill: #63d1bb;
+  }
 }
 
 @media (min-width: @tablet-width) {

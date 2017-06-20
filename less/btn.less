@@ -12,6 +12,7 @@
   text-decoration: none;
   border: 2px solid #444444;
   background-color: #ffffff;
+  cursor: pointer;
 
   &:hover {
     color: @btn__color--hover;
@@ -22,16 +23,26 @@
     color: @btn__color--active;
     background-color: btn__bg--hover;
   }
+}
 
-  &--secondary {
+.btn--secondary {
+  background-color: @btn__bg--secondary;
+  color: #ffffff;
+  border: none;
+
+  &:hover,
+  &:active {
     background-color: @btn__bg--secondary;
-    color: #ffffff;
-    border: none;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
 @media (min-width: @tablet-width) {
   .btn {
     width: 292px;
+
+    &--secondary {
+      width: 350px;
+    }
   }
 }

@@ -5,10 +5,16 @@
 
 .content-wrapper--inner {
   .conteiner--inner();
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
-  .form .content-wrapper--inner {
+  .form .content-wrapper--inner,
+  .page-footer .content-wrapper--inner {
     display: flex;
+  }
+
+  .promo .content-wrapper {
+    padding: 0 50px;
   }
 }

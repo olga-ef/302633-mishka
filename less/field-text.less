@@ -1,4 +1,5 @@
 .field-text {
+  position: relative;
   margin-bottom: 32px;
   padding: 0 30px;
   font-size: @text__font-size--big;
@@ -56,6 +57,7 @@
   width: 100%;
   height: 51px;
   padding: 0 15px;
+  padding-right: 25px;
   background-color: transparent;
   border: none;
   box-shadow: inset 0 -2px 0 0 #000000;
@@ -71,23 +73,28 @@
   }
 }
 
-.field-text__input--tel::before,
-.field-text__input--mail::before {
-  content: "";
+.field-text__input::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+.field-text__input::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+.field-text__input:-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+.field-text__input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.field-text__icon {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 32px;
-  height: 25px;
-  background-repeat: no-repeat;
+  right:5px;
+  top: 50%;
 }
 
-.field-text__input--tel::before {
-  background-image: url(../img/icon-phone.svg);
-}
-
-.field-text__input--mail::before {
-  background-image: url(../img/icon-mail.svg);
+.field-text__input:hover + .field-text__icon,
+.field-text__input:focus + .field-text__icon {
+  fill: #62d1ba;
 }
 
 .field-text__textarea {
@@ -158,6 +165,11 @@
   .field-text__textarea {
     width: 500px;
   }
+
+  .field-text__icon {
+    top: 8px;
+    right: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -186,5 +198,9 @@
   .field-text__input,
   .field-text__textarea {
     width: 700px;
+  }
+  .field-text__icon {
+    top: 8px;
+    right: 180px;
   }
 }

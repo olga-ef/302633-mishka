@@ -1,6 +1,6 @@
 .page-footer {
   padding: 0 30px;
-  background-color: bg--main;
+  background-color: #f1f1f1;
 }
 
 .page-footer__logo {
@@ -28,6 +28,10 @@
   text-decoration: none;
   font-weight: bold;
   vertical-align: middle;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__academy-logo {
@@ -36,14 +40,34 @@
   width: 27px;
   height: 34px;
   margin-left: 22px;
-  background-image: url(../img/logo-htmlacademy.svg);
-  background-repeat: no-repeat;
   vertical-align: middle;
+  }
+
+.page-footer__academy-logo-item {
+  fill: #63d1bb;
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    fill: #46c1ae;
+  }
+}
+
+.page-footer__logo-icon:hover {
+  fill: #46c1ae;
+}
+
+.page-footer__logo-icon:active {
+  fill: #46c1ae;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    padding: 50px;
+    padding: 52px 50px 40px;
     display: flex;
   }
 
@@ -67,6 +91,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 38px 50px;
+  }
+
   .page-footer__logo {
     margin-right: 160px;
   }
