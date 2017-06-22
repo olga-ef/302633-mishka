@@ -8,11 +8,13 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var run = require("run-sequence");
 var del = require("del");
+var svgo = require('gulp-svgo');
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -33,10 +35,6 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-  gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
-});
-
 gulp.task("images", function() {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
   .pipe(imagemin([
@@ -48,7 +46,7 @@ gulp.task("images", function() {
 
 gulp.task("sprite", function() {
   return gulp.src("build/img/icons/*.svg")
-  .pipe(svgmin())
+  .pipe(svgo())
   .pipe(svgstore({
     inlineSvg: true
   }))
