@@ -32,31 +32,31 @@
   font-weight: bold;
   color: @color-white;
   text-decoration: none;
+}
 
-  &--interiors {
-    background-color: #63d1bb;
+.promo__item--interiors {
+  background-color: #63d1bb;
 
-    &:hover {
-      background-color: #59d5bc;
-    }
-
-    &:active {
-      background-color: #59d5bc;
-      color: rgba(255, 255, 255, 0.3);
-    }
+  &:hover {
+    background-color: #59d5bc;
   }
 
-  &--toys {
-    background-color: #56c3b2;
+  &:active {
+    background-color: #59d5bc;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
 
-    &:hover {
-      background-color: #46c1ae;
-    }
+.promo__item--toys {
+  background-color: #56c3b2;
 
-    &:active {
-      background-color: #46c1ae;
-      color: rgba(255, 255, 255, 0.3);
-    }
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    background-color: #46c1ae;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -97,8 +97,8 @@
     background-image:
       url("../img/bg-zigzag-fill.svg"),
       url("../img/hero-desktop@1x.jpg");
-    background-size: 770px 24px, 1150px auto;
-    background-position: center bottom 5px;
+    background-size: 100% 24px, 1150px auto;
+    background-position: center bottom -7px, center;
   }
 
   .promo__title {
@@ -122,11 +122,11 @@
     background-size: 770px 24px;
 
     &--interiors {
-      background-position: left -10px bottom -7px;
+      background-position: left -26px bottom -7px;
     }
 
     &--toys {
-      background-position: left  bottom -7px;
+      background-position: left -13px  bottom -7px;
     }
   }
 
@@ -155,7 +155,7 @@
   .promo {
     margin-top: -75px;
     padding-top: 153px;
-    background-size: 1250px 34px, 1250px 746px;
+    background-size: 100% 34px, 1250px 746px;
     background-position: center bottom -15px,center bottom;
   }
 
@@ -170,11 +170,11 @@
     background-size: 1250px 34px;
 
     &--interiors {
-      background-position: left -100px bottom -15px;
+      background-position: left -75px bottom -15px;
     }
 
     &--toys {
-      background-position: left -105px bottom -15px;
+      background-position: left -100px bottom -15px;
     }
   }
 }
