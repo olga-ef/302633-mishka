@@ -91,11 +91,11 @@ gulp.task("clean", function() {
 
 gulp.task("build", function(fn) {
     run(
-     "clean",
-     "copy",
-     "style",
-     "images",
-     "sprite",
-     fn
+      "clean",
+      "copy",
+      "style",
+      "images",
+      "sprite",
+      fn
   );
 });
