@@ -7,14 +7,14 @@
   font-weight: bold;
 
   &--textarea {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 }
 
 .field-text__title {
   display: block;
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   color: #63d1bb;
   text-transform: uppercase;
 
@@ -27,10 +27,15 @@
     height: 1px;
     background-color: #62d1ba;
   }
+
   &--tel,
   &--mail {
     margin-bottom: 5px;
   }
+}
+
+.field-text--textarea .field-text__title {
+  margin-bottom: 23px;
 }
 
 .field-text__items {
@@ -56,7 +61,7 @@
   position: relative;
   width: 100%;
   height: 51px;
-  padding: 0 15px;
+  padding: 0;
   padding-right: 25px;
   background-color: transparent;
   border: none;
@@ -83,6 +88,19 @@
   color: rgba(68, 68, 68, 0.3);
 }
 .field-text__input:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.field-text__textarea::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+.field-text__textarea::-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+.field-text__textarea:-moz-placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
+.field-text__textarea:-ms-input-placeholder {
   color: rgba(68, 68, 68, 0.3);
 }
 
@@ -118,21 +136,23 @@
 @media (min-width: @tablet-width) {
   .field-text {
     display: flex;
-    padding: 50px;
+    padding: 50px 50px 20px;
 
     &--tel {
       margin-bottom: 0px;
-      padding: 20px 50px;
+      padding-top: 50px;
+      padding-bottom: 20px;
       background-color: #f1f1f1;
     }
 
     &--mail {
-      padding: 5px 50px 45px;
+      padding: 5px 50px 50px;
       margin-bottom: 0;
       background-color: #f1f1f1;
     }
+
     &--textarea {
-      padding: 55px 50px 50px;
+      padding: 50px 50px 55px;
       margin-bottom: 0;
     }
   }
@@ -146,17 +166,26 @@
 
   .field-text__items {
     width: 502px;
+    padding-left: 3px;
   }
 
   .field-text__item {
     flex-direction: row;
     width: 502px;
     align-items: center;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
+    font-size: 19px;
+    line-height: 19px;
   }
 
   .field-text__text {
-    margin-right: 30px;
+    margin-right: 25px;
+  }
+
+  .field-text__input {
+    padding-left: 15px;
+    font-size: 19px;
+    line-height: 19px;
   }
 
   .field-text__input--tel,
@@ -176,14 +205,19 @@
 
 @media (min-width: @desktop-width) {
   .field-text {
-    padding-top: 20px;
+    padding-top: 25px;
+
+    &--tel {
+      padding-top: 50px;
+    }
 
     &--mail {
-      padding-top: 8px;
+      padding-top: 5px;
     }
 
     &--textarea {
-      padding-top: 52px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
 
