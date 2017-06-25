@@ -108,7 +108,7 @@
 }
 
 @media (min-width: 768px) and (min-resolution: 144dpi),
-       (min-width: 768px) and (min-resolution: 1.5dppx) {
+      (min-width: 768px) and (min-resolution: 1.5dppx) {
   .promo {
     background-image:
       url("../img/bg-zigzag-fill.svg"),
@@ -138,11 +138,16 @@
   .promo__items {
     display: flex;
     align-items: flex-end;
+    margin-top: 370px;
+
+    &:hover,
+    &:active {
+      margin-top: 365px;
+    }
   }
 
   .promo__item {
     width: 50%;
-    margin-top: 375px;
     padding: 27px 35px 35px;
     font-size: 20px;
     line-height: 30px;
@@ -153,7 +158,6 @@
     &:hover,
     &:active {
       padding-bottom: 40px;
-      margin-top: 370px;
     }
 
     &--interiors {
@@ -188,9 +192,17 @@
 
   .promo__title {
     width: 700px;
-    margin-bottom: 358px;
     font-size: @title__font-size--l;
     line-height: 57px;
+  }
+
+  .promo__items {
+    margin-top: 358px;
+
+    &:hover,
+    &:active {
+      margin-top: 353px;
+    }
   }
 
   .promo__item {
