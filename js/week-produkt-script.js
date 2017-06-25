@@ -1,4 +1,4 @@
-var orderButton = document.querySelector(".week-produkt__btn");
+var orderButton = document.querySelector(".week-product__btn");
 var orderModal =  document.querySelector(".order-modal");
 
 orderButton.addEventListener("click", function(event) {

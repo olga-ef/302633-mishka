@@ -33,8 +33,11 @@
   background-repeat: no-repeat;
   background-position: center, top center;
   overflow: hidden;
+}
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-width: 320px) and (min-resolution: 144dpi),
+      (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .contacts__map {
     background-image:
       url("../img/icon-map-pin.svg"),
       url("../img/map-mobile@2x.jpg");
@@ -49,6 +52,7 @@
 
 .contacts__mail-link {
   display: inline-block;
+  vertical-align: top;
   color: @text__color--main;
   border-bottom: 1px solid #62d1ba;
   text-decoration: none;
@@ -122,6 +126,7 @@
     background-image:
       url("../img/icon-map-pin.svg"),
       url("../img/map-tablet@2x.jpg");
+    background-size: auto, cover;
   }
 }
 

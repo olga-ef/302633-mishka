@@ -3,6 +3,14 @@
   margin: 0 30px 58px;
   padding: 23px 0 30px;
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px  10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video__title {
@@ -21,7 +29,7 @@
     left: 35px;
     height: 26px;
     width: 32px;
-    background-image:url(../img/icon-video.svg);
+    background-image: url(../img/icon-video.svg);
   }
 }
 
@@ -48,6 +56,7 @@
   &:active {
     width: 82px;
     height: 62px;
+    opacity: 0.3;
   }
 }
 
@@ -74,7 +83,6 @@
   .video {
     display: flex;
     flex-direction: column;
-    margin: 0;
     margin: 0 50px 60px;
     padding: 0 0 46px;
   }
@@ -118,15 +126,15 @@
 
 @media (min-width: @desktop-width) {
   .video {
-    height: 455px;
-    flex-wrap: wrap;
-    margin-bottom: 110px;
-    padding-bottom: 0;
+    margin-bottom: 103px;
+    padding-bottom: 65px;
+    align-items: flex-end;
   }
 
   .video__title {
     width: 160px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    margin-right: 130px;
     padding-left: 0;
     padding-top: 95px;
 
@@ -137,14 +145,16 @@
   }
 
   .video__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 682px;
-    margin-right: 55px;
-    margin-bottom: 0;
   }
 
   .video__descr {
     width: 270px;
     margin-bottom: 45px;
+    margin-right: 20px;
     padding-left: 0;
   }
 
@@ -154,7 +164,7 @@
 
   .video__order-btn {
     width: 230px;
-    margin-left: 5px;
-    margin-right: auto;
+    margin: 0;
+    margin-right: 58px;
   }
 }

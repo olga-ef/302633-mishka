@@ -6,8 +6,11 @@
   background-repeat: no-repeat;
   background-position: center -20%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-width: 320px) and (min-resolution: 144dpi),
+      (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .promo {
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: 574px auto;
   }
@@ -16,11 +19,19 @@
 .promo__title {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 122px;
   font-size: @title__font-size--s;
   line-height: 30px;
   font-weight: bold;
   text-align: center;
+}
+
+.promo__items {
+  margin-top: 122px;
+
+  &:hover,
+  &:active {
+    margin-top: 117px;
+  }
 }
 
 .promo__item {
@@ -32,6 +43,11 @@
   font-weight: bold;
   color: @color-white;
   text-decoration: none;
+
+  &:hover,
+  &:active {
+    padding-bottom: 35px;
+  }
 }
 
 .promo__item--interiors {
@@ -78,15 +94,27 @@
 
 .promo__item:hover .promo__icon {
   opacity: 0.7;
+  transform: translateY(-5px);
 }
 
 .promo__item:active .promo__icon {
   opacity: 0.3;
+  transform: translateY(-5px);
 }
 
 .promo__name {
   display: block;
   width: 130px;
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+       (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .promo {
+    background-image:
+      url("../img/bg-zigzag-fill.svg"),
+      url("../img/hero-desktop@2x.jpg");
+    background-size: 100% 24px, 1150px auto;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -103,23 +131,30 @@
 
   .promo__title {
     width: 500px;
-    margin-bottom: 375px;
     font-size: @title__font-size--m;
     line-height: 50px;
   }
 
   .promo__items {
     display: flex;
+    align-items: flex-end;
   }
 
   .promo__item {
     width: 50%;
+    margin-top: 375px;
     padding: 27px 35px 35px;
     font-size: 20px;
     line-height: 30px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: no-repeat;
     background-size: 770px 24px;
+
+    &:hover,
+    &:active {
+      padding-bottom: 40px;
+      margin-top: 370px;
+    }
 
     &--interiors {
       background-position: left -26px bottom -7px;
@@ -140,14 +175,6 @@
       top: 30px;
       right: 35px;
     }
-  }
-}
-
-@media (min-width: @tablet-width) and (min-resolution: 144dpi),
-        (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
-  .promo {
-    background-image: url("../img/hero-desktop@2x.jpg");
-    background-size: 1250px 34px, 1150px auto;
   }
 }
 
